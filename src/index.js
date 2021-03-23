@@ -11,10 +11,17 @@ const isJSON = (str) => str.startsWith("{");
 
 module.exports = async (url, flags, opts) => {
   const { stdout } = await execa(YOUTUBE_DL_PATH, args(url, flags), opts);
+  //
   if (opts && opts.debugMode) {
     console.log(stdout);
   }
-  return isJSON(stdout) ? JSON.parse(stdout) : stdout;
+  if (isJSON(stdout)) {
+    return JSON.parse(
+      opts && opts.isPlaylist ? `[${stdout.replace(/[\r\n]+/g, ",")}]` : stdout
+    );
+  }
+  //
+  return stdout;
 };
 
 module.exports.args = args;
