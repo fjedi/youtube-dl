@@ -10,9 +10,18 @@
     "url": "https://microlink.io"
   },
   "contributors": [
-    "Kiko Beats <josefrancisco.verdu@gmail.com>",
-    "Alexander Radyushin <r.alex.andr@ya.ru>",
-    "Skick <skick1234@gmail.com>"
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com"
+    },
+    {
+      "name": "Alexander Radyushin",
+      "email": "r.alex.andr@ya.ru"
+    },
+    {
+      "name": "Skick",
+      "email": "skick1234@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
