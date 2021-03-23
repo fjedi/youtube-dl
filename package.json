@@ -2,7 +2,7 @@
   "name": "@fjedi/youtube-dl",
   "description": "A simple Node.js wrapper for youtube-dl",
   "homepage": "https://nicedoc.io/microlinkhq/youtube-dl-exec",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "src/index.js",
   "author": {
     "email": "hello@microlink.io",
@@ -10,18 +10,9 @@
     "url": "https://microlink.io"
   },
   "contributors": [
-    {
-      "name": "Kiko Beats",
-      "email": "josefrancisco.verdu@gmail.com"
-    },
-    {
-      "name": "Alexander Radyushin",
-      "email": "r.alex.andr@ya.ru"
-    },
-    {
-      "name": "Skick",
-      "email": "skick1234@gmail.com"
-    }
+    "Kiko Beats <josefrancisco.verdu@gmail.com>",
+    "Alexander Radyushin <r.alex.andr@ya.ru>",
+    "Skick <skick1234@gmail.com>"
   ],
   "repository": {
     "type": "git",
