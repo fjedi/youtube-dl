@@ -2,7 +2,7 @@
   "name": "@fjedi/youtube-dl",
   "description": "A simple Node.js wrapper for youtube-dl",
   "homepage": "https://nicedoc.io/microlinkhq/youtube-dl-exec",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "main": "src/index.js",
   "author": {
     "email": "hello@microlink.io",
@@ -10,9 +10,14 @@
     "url": "https://microlink.io"
   },
   "contributors": [
-    "Kiko Beats <josefrancisco.verdu@gmail.com>",
-    "Alexander Radyushin <r.alex.andr@ya.ru>",
-    "Skick <skick1234@gmail.com>"
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com"
+    },
+    {
+      "name": "Skick",
+      "email": "skick1234@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
@@ -48,11 +53,11 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "husky": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
     "nyc": "latest",
     "prettier-standard": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
@@ -87,12 +92,6 @@
       "@commitlint/config-conventional"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "package.json": [
       "finepack"
@@ -103,5 +102,9 @@
     "*.md": [
       "standard-markdown"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx lint-staged"
   }
 }
